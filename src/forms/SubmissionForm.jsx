@@ -31,11 +31,11 @@ const styles = theme => ({
 class SubmissionForm extends React.Component {
 
   state = {
-    columnOne: '',
+    /*columnOne: '',
     columnTwo: '',
     columnThree: '',
     columnFour: '',
-    columnFive: '',
+    columnFive: '',*/
   };
 
   handleSubmit = event => {
@@ -119,15 +119,6 @@ class SubmissionForm extends React.Component {
               onChange={this.handleChange}
               margin="normal"
             />
-            <TextField
-              label={'Column Six'}
-              name={'columnSix'}
-              className={classes.textField}
-              value={this.state.columnSix}
-              onChange={this.handleChange}
-              margin="normal"
-            />
-
             <Button variant="contained"
                     color="primary"
                     type={'submit'}

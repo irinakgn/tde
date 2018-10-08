@@ -28,7 +28,7 @@ const styles = theme => ({
 });
 
 
-class SubmissionForm extends React.Component {
+class LogIn extends React.Component {
 
   state = {
    Username: '',
@@ -85,17 +85,17 @@ class SubmissionForm extends React.Component {
               margin="normal"
             />
             <TextField
-              label={'Column Two'}
-              name={'columnTwo'}
+              label={'Password'}
+              name={'password'}
               className={classes.textField}
-              value={this.state.columnTwo}
+              value={this.state.password}
               onChange={this.handleChange}
               margin="normal"
 
             />
 
             <Button variant="contained"
-                    color="primary"
+                    color="secondary"
                     type={'submit'}
                     className={classes.button}>
               Submit
@@ -108,4 +108,4 @@ class SubmissionForm extends React.Component {
 }
 
 
-export default withStyles(styles)(SubmissionForm)
+export default withStyles(styles)(LogIn)
